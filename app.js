@@ -17,7 +17,7 @@ app.get('/',(req,res)=>{
    res.render('hello')
 })
 app.get('/create',(req,res)=>{
-    
+    res.render('createPoll');
 })
 mongoose.connect('mongodb://localhost:27017/test',{useNewUrlParser: true})
 
